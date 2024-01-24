@@ -1,0 +1,31 @@
+.Homeimg1{
+    width: 50px;
+    height: 40px;
+  }
+  .HomeVideo{
+    width: 30%;
+    height: 250px;
+    border-radius: 20px;
+    text-align: left;
+    background: #fff;
+    border: none;
+  }
+  .VideoImg{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .carouselBtn{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: grey;
+    border: none;
+    color: #fff;
+  }
+  .RecVid{
+    width: 50%;
+  }
+  .RecVidImg{
+    height: 250px;
+    
+  }

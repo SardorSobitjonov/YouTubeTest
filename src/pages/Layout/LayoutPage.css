@@ -1,0 +1,27 @@
+  .layout{
+    background: #ffff;
+    width: 25%;
+  }
+  .layoutList{
+    height: 90vh;
+    padding: 20px 40px;
+  }
+  .layoutItem{
+    padding: 8px 0;
+  }
+  .layoutItem i,
+  .layoutItem img{
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  .layoutLink{
+    text-decoration: none;
+    color: #898989;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .layoutLink:focus{
+    color: red;
+  }
