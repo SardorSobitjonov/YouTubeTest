@@ -1,11 +1,13 @@
   .layout{
     background: #ffff;
-
+    position: relative;
+    z-index: 9;
     }
   .layoutList{
     height: 100vh;
     padding: 0 40px;
     overflow-y: scroll;
+    background: #fff;
   }
   .layoutList::-webkit-scrollbar{
     display: none;

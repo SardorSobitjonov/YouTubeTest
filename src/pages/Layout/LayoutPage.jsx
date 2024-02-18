@@ -6,14 +6,9 @@ import Sub2 from "../../img/img-2.svg"
 import Sub3 from "../../img/img-3.svg"
 
 
-const LayoutPage = ({handleLayout}) => {
+const LayoutPage = () => {
   return (
     <div className="layout w-100">
-    {/* <div className="d-flex align-items-center">
-    <button onClick={handleLayout} className="btn border-0 py-1"><i className='bi bi-list fs-3'></i></button>
-    <img className='logoIcon' src={YoutubeLogo} alt="Logo" />
-    <img className='logo' src={YoutubeText} alt="Logo" />
-    </div> */}
       <ul className='layoutList'>
         <li className='layoutItem'>
           <i className="bi bi-house"></i>

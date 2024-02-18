@@ -41,7 +41,7 @@ body{
   }
 
   .HomeVideo{
-    max-width: 350px;
+    width: 350px;
     height: 250px;
     border-radius: 15px;
     text-align: left;

@@ -43,75 +43,75 @@ const Home = ({handleLayout}) => {
       setHomeCarouselChan(homeCarouselChan - 360)
   }
 
-  // useEffect(() => {
-  //   const getVideo = async () => {
-  //     const url = 'https://youtube138.p.rapidapi.com/home/?hl=en&gl=US';
-  //     const options = {
-  //       method: 'GET',
-  //       headers: {
-  //         'X-RapidAPI-Key': 'ce741966f8msh1aaff1b43c04263p149173jsna7aaba40bcff',
-  //         'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-  //       }
-  //     };
+  useEffect(() => {
+    const getVideo = async () => {
+      const url = 'https://youtube138.p.rapidapi.com/home/?hl=en&gl=US';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+          'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+        }
+      };
       
-  //     try {
-  //       const response = await fetch(url, options);
-  //       const result = await response.json();
-  //       setVideo(result);
-  //       console.log(result);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setVideo(result);
+        console.log(result);
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
-  //   getVideo()
-  // }, [])
-  // useEffect(() => {
-  //   const getVideo = async () => {
-  //     const url = 'https://youtube138.p.rapidapi.com/channel/videos/?id=UCJ5v_MCY6GNUBTO8-D3XoAg&hl=en&gl=US';
-  //     const options = {
-  //       method: 'GET',
-  //       headers: {
-  //         'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
-  //         'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-  //       }
-  //     };
+    getVideo()
+  }, [])
+  useEffect(() => {
+    const getVideo = async () => {
+      const url = 'https://youtube138.p.rapidapi.com/channel/videos/?id=UCJ5v_MCY6GNUBTO8-D3XoAg&hl=en&gl=US';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+          'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+        }
+      };
       
-  //     try {
-  //       const response = await fetch(url, options);
-  //       const result = await response.json();
-  //       setVideoRec(result);
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setVideoRec(result);
 
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
-  //   getVideo()
-  // }, [])
-  // useEffect(() => {
-  //   const getVideo = async () => {
-  //     const url = 'https://youtube138.p.rapidapi.com/playlist/videos/?id=PLcirGkCPmbmFeQ1sm4wFciF03D_EroIfr&hl=en&gl=US';
-  //     const options = {
-  //       method: 'GET',
-  //       headers: {
-  //         'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
-  //         'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-  //       }
-  //     };
+    getVideo()
+  }, [])
+  useEffect(() => {
+    const getVideo = async () => {
+      const url = 'https://youtube138.p.rapidapi.com/playlist/videos/?id=PLcirGkCPmbmFeQ1sm4wFciF03D_EroIfr&hl=en&gl=US';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+          'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+        }
+      };
       
-  //     try {
-  //       const response = await fetch(url, options);
-  //       const result = await response.json();
-  //       setVideoChan(result);
-  //       console.log(result);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setVideoChan(result);
+        console.log(result);
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
-  //   getVideo()
-  // }, [])
+    getVideo()
+  }, [])
 
   return (
     <div className='d-flex flex-column w-100 gap-2 home'>
@@ -161,7 +161,7 @@ const Home = ({handleLayout}) => {
         </div>
         </div>
         <div style={{'--homeCarouselRec' : `${homeCarouselRec + 'px'}`}} className='d-flex w-100 gap-2 VideoListRec VideoList'>
-            {/* {videoRec?.contents?.map((item) => {
+            {videoRec?.contents?.map((item) => {
             return<>
             <div>
                <Link to={"/video"} style={{textDecoration: 'none', color: 'black'}} onClick={() => handleLayout(false)}>
@@ -178,49 +178,7 @@ const Home = ({handleLayout}) => {
             </Link>
             </div>
             </>
-})} */}
-        <div className='ResVid'>
-               <Link to={"/video"} style={{textDecoration: 'none', color: 'black'}} onClick={() => handleLayout(false)}>
-              <div className='HomeRecVideo'>
-                <img className="VideoImg" src={Sub1} alt="Error" />
-                <h6 className='px-2 py-1'>Lorem, ipsum dolor.lorem loremlorem</h6>
-                <div className="d-flex align-items-center justify-content-between text-secondary px-2">
-                <div className='d-flex gap-4 justify-content-between homeVidBottom'>
-                  <p><i className='bi bi-eye'> </i>99889230k marta</p>
-                  <p>3 monthly ago</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            </div>     
-        <div className="ResVid">
-               <Link to={"/video"} style={{textDecoration: 'none', color: 'black'}}>
-              <div className='HomeRecVideo'>
-                <img className="VideoImg" src={Sub1} alt="Error" />
-                <h6 className='px-2 py-1'>Lorem, ipsum dolor.lorem loremlorem</h6>
-                <div className="d-flex align-items-center justify-content-between text-secondary px-2">
-                <div className='d-flex gap-4 justify-content-between'>
-                  <p><i className='bi bi-eye'> </i>99889230k marta</p>
-                  <p>3 monthly ago</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            </div>
-        <div className="ResVid">
-               <Link to={"/video"} style={{textDecoration: 'none', color: 'black'}}>
-              <div className='HomeRecVideo'>
-                <img className="VideoImg" src={Sub1} alt="Error" />
-                <h6 className='px-2 py-1'>Lorem, ipsum dolor.lorem loremlorem</h6>
-                <div className="d-flex align-items-center justify-content-between text-secondary px-2">
-                <div className='d-flex gap-4 justify-content-between'>
-                  <p><i className='bi bi-eye'> </i>99889230k marta</p>
-                  <p>3 monthly ago</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            </div>
+})}
             </div>
       </div>
       <div className="w-100 d-flex justify-content-between  pt-5 homeResHide ">

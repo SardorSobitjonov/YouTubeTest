@@ -10,50 +10,50 @@ const Video = () => {
   const [vid, setVid] = useState([])
   const [vidNext, setVidNext] = useState([])
 
-//   useEffect(()=> {
-//     const getNext = async() => {
-//       const url = 'https://youtube138.p.rapidapi.com/video/related-contents/?id=kJQP7kiw5Fk&hl=en&gl=US';
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
-// 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-// 	}
-// };
+  useEffect(()=> {
+    const getNext = async() => {
+      const url = 'https://youtube138.p.rapidapi.com/video/related-contents/?id=kJQP7kiw5Fk&hl=en&gl=US';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+	}
+};
 
-// try {
-// 	const response = await fetch(url, options);
-// 	const result = await response.json();
-//   setVidNext(result)
-// 	console.log(result);
-// } catch (error) {
-// 	console.error(error);
-// }
-//     }
-//     getNext()
-//   }, [])
-//   useEffect(()=> {
-//     const getVid = async() => {
-//       const url = 'https://youtube138.p.rapidapi.com/video/details/?id=kJQP7kiw5Fk&hl=en&gl=US';
-//       const options = {
-//         method: 'GET',
-//         headers: {
-//           'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
-//           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-//         }
-//       };
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+  setVidNext(result)
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+    }
+    getNext()
+  }, [])
+  useEffect(()=> {
+    const getVid = async() => {
+      const url = 'https://youtube138.p.rapidapi.com/video/details/?id=kJQP7kiw5Fk&hl=en&gl=US';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+          'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+        }
+      };
 
-//       try {
-//         const response = await fetch(url, options);
-//         const result = await response.json();
-//         setVid(result)
-//         console.log(result);
-//       } catch (error) {
-//         console.error(error);
-//       }
-//     }
-//     getVid()
-//   }, [])
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        setVid(result)
+        console.log(result);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getVid()
+  }, [])
   return (
     <>
     <div className="Video">
