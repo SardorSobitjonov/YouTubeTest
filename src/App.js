@@ -1,28 +1,44 @@
-import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import LayoutPage from './pages/Layout/LayoutPage';
-import Tranding from './pages/Tranding';
+import Channel from './pages/ChannelPage/Channel'
+import Header from './pages/Header';
+import { useState } from 'react';
 import Video from './pages/Video/Video';
+ 
+const App = () => {
+  const [layoutOpen, setlayoutOpen] = useState(true)
 
-function App() {
-  return (
+  const handleLayout = () => {
+    setlayoutOpen(!layoutOpen)
+  }
+
+  return(
     <>
-    <div>
-
-      <Header />
-      <div className='d-flex'>
-          <LayoutPage />
-          <Home />
+      <div>
+        <Header handleLayout={handleLayout}/>
+        <div className='d-flex w-100'>
+          <div className="layoutFlex">
+            {
+              layoutOpen && <LayoutPage/>
+            }
+          </div>
+          <div>
+          <Routes>
+            <Route path='/' element={<Home handleLayout={handleLayout}/>}/>
+            <Route path='/video' element={<Video/>}/>
+            <Route path='/channel' element={<Channel/>}/>
+          </Routes>
+          {
+            <Video /> && (<div className='d-none'><LayoutPage /></div>)
+          }
+          </div>
         </div>
-
-      <Video />
-    </div>
-
+      </div>
     </>
-  );
+  )
 }
 
 export default App;

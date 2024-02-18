@@ -5,9 +5,15 @@ import Sub1 from "../../img/img-1.svg"
 import Sub2 from "../../img/img-2.svg"
 import Sub3 from "../../img/img-3.svg"
 
-const LayoutPage = () => {
+
+const LayoutPage = ({handleLayout}) => {
   return (
-    <div className="layout">
+    <div className="layout w-100">
+    {/* <div className="d-flex align-items-center">
+    <button onClick={handleLayout} className="btn border-0 py-1"><i className='bi bi-list fs-3'></i></button>
+    <img className='logoIcon' src={YoutubeLogo} alt="Logo" />
+    <img className='logo' src={YoutubeText} alt="Logo" />
+    </div> */}
       <ul className='layoutList'>
         <li className='layoutItem'>
           <i className="bi bi-house"></i>
@@ -16,12 +22,12 @@ const LayoutPage = () => {
     
         <li className='layoutItem'>
         <i className="bi bi-fire"></i>
-          <Link to={'/tranding'} className="layoutLink">Tranding</Link>
+          <Link to={'/'} className="layoutLink">Tranding</Link>
         </li>
     
         <li className='mb-3 layoutItem'>
         <i className="bi bi-folder2-open"></i>
-          <Link to={'/subscriptions'} className="layoutLink">Subscriptions</Link>
+          <Link to={'/subscriptions'} className="layoutLink">Subscription</Link>
         </li>
         <li className='layoutItem'>
         <i className="bi bi-folder"></i>

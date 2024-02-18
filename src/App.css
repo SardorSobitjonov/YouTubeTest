@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --searchInput: none;
+}
+
 .flex{
   display: flex;
   align-items: center;
@@ -12,25 +16,23 @@
 }
 ol, ul{
   list-style: none;
-}
-
-.nav{
-  width: 100%;
-}
-
-.searchBox div{
-  width: 90%;
-}
+} 
 .searchInp{
   border: 1px solid rgba(128, 128, 128, 0.329);
-  border-right: 0;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   outline: 0;
-  width: 90%;
+  width: 500px;
+  height: 35px;
   padding: 0 15px;
+  margin-bottom: 10px;
 }
-.searchBtn{
-  border-radius: 0 20px 20px 0;
+.searchResult{
+  border-radius: 10px;
+  background: #fff;
+  z-index: 10;
+}
+.searchHideBox{
+  align-items: center;
 }
 .navBtn{
   border: 1px solid grey;
@@ -38,4 +40,95 @@ ol, ul{
   border-radius: 50%;
   padding: 2px 8px;
 }
+.searchBox{
+  height: 40px;
+}
+.searchHideBox{ 
+  display: flex;
+  margin-left: -100px;
+}
+.navButtons{
+  padding-left: 100px;
+}
+.layoutFlex{
+  background: #fff;
+}
 
+@media (max-width: 450px) {
+  .Header{
+    width: 450px !important;
+    padding: 5px;
+  }
+  .layoutFlex{
+    display: none;
+  }
+  .pageFlex{
+    padding-left: 0;
+  }
+  .logo{
+    width: 50px;
+  }
+  .logoIcon{
+    width: 30px;
+  }
+  .searchInp{
+    display: var(--searchInput) !important;
+  }
+ .headerBtn{
+    display: none !important;
+  }
+  .resSearch{
+    width: 100px !important;
+    display: flex;
+  }
+  .searchBtn{
+    display: inline-block !important;
+    margin-left: 65px !important;
+  }
+  .searchBtn, .searchBox{
+    border: none;
+    font-size: 16px;
+    display: flex;
+    gap: 4px;
+  }
+  .navBtn{
+    padding: 0 6px;
+  }
+}
+@media (max-width: 800px) {
+  .Header{
+    width: 700px;
+  }
+  .layoutFlex{
+    display: none;
+  }
+  .pageFlex{
+    padding-left: 0;
+  }
+  .logo{
+    width: 50px;
+  }
+  .logoIcon{
+    width: 30px;
+  }
+  .headerBtn{
+    display: none !important;
+  }
+  .searchInp{
+    width: 180px;
+  }
+  .searchBtn, .searchBox{
+    border: none;
+    font-size: 16px;
+    margin-left: 94px;
+    display: flex;
+    gap: 4px;
+  }
+  .navBtn{
+    padding: 0 6px;
+  }
+  .navButtons{
+    width: 0; 
+    display: block;
+  }
+}

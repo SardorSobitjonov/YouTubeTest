@@ -1,12 +1,28 @@
 
 .Video{
-    width: 100%;
-    height: 100vh;
-    padding: 20px 40px 20px 80px;
+    width: 1380px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
 }
 .vidMain{
     width: 70%;
 }
+.vidChannel{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    background: #fff;
+}
+.videoChannel{
+    text-decoration: none;
+    color: black;
+}
+.vidNext::-webkit-scrollbar{
+    display: none;
+  }
 .vid{
     border-bottom: 1px solid #EBEBEB;
     padding-bottom: 20px;
@@ -17,3 +33,106 @@
     background: #EBEBEB;
     color: black;
 }
+.vidBtn:focus{
+    background: rgb(29, 122, 245);
+    color: #fff;
+}
+.vidChannelImg{
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.vidNext{
+    width: 30%;
+    height: 140vh;
+    overflow-y: scroll;
+}
+.VideoImg{
+    width: 100%;
+}
+
+  @media (max-width: 500px) {
+    .Video{
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+        position: absolute;
+        flex-direction: column;
+    }
+    .vidMain{
+        width: 70%;
+    }
+    .vidChannel{
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+        background: #fff;
+        text-decoration: none;
+    }
+    .vid{
+        width: 310px;
+        border-bottom: 1px solid #EBEBEB;
+        padding-bottom: 10px;
+    
+    }
+    .vidBtn{
+        padding: 8px 5px;
+        border-radius: 10px;
+        background: #EBEBEB;
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+    }
+    .vidChannelImg{
+        margin-top: 5px;
+        width: 40px;
+        height: 30px;
+    }
+    .vidNext{
+
+        height: 140vh;
+        overflow-y: initial;
+    }
+    .VideoImg{
+        width: 100%;
+    }
+    .bgg{
+        text-decoration: none;
+        color: black;
+    }
+    .ifroem-video{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .video-p{
+        display: none;
+    }
+    .text-View{
+        display:block ;
+    }
+    .tectP{
+        font-size: 13px;
+    }
+    .textH2{
+        font-size: 20px;
+    }
+    .titl-h2{
+        width: 100% !important;
+        font-size: 18px;
+        /* display: flex; */
+        /* display: block; */
+      /* flex-wrap: wrap; */
+     }
+     .resLayout{
+        display: flex;
+        height: 50px;
+      }
+      .resLink:focus{
+        color: red;
+      }
+      .btn-showMore{
+        display: none;
+    } 
+} 

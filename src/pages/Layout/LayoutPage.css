@@ -1,10 +1,14 @@
   .layout{
     background: #ffff;
-    width: 25%;
-  }
+
+    }
   .layoutList{
-    height: 90vh;
-    padding: 20px 40px;
+    height: 100vh;
+    padding: 0 40px;
+    overflow-y: scroll;
+  }
+  .layoutList::-webkit-scrollbar{
+    display: none;
   }
   .layoutItem{
     padding: 8px 0;

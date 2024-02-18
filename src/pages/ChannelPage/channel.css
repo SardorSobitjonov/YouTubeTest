@@ -1,0 +1,411 @@
+.channel-box{
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+.channelImg{
+    width: 1100px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+   
+}
+.subscribe-btn{
+    border-radius: 20px;
+    background: #F00;
+    padding: 10px 20px;
+    margin-bottom: 62px;
+    border: 0;
+    color: #fff;
+}
+.ovalImg{
+   padding: auto ;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box1{
+    padding: auto;
+}
+.box2{
+    padding:auto ;
+    margin-top: 30px;
+    margin-left: auto;
+}
+.zvanokImg{
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.channelUl{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+.channelLink{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.channelLink:focus{
+    color: #F00;
+    text-decoration: underline;
+}
+.channelLink1{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.channelLink1:focus{
+    color: #F00;
+    text-decoration: underline;
+}
+.p{
+    color: #C2C2C2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: auto;
+}
+.cover-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cover-box-a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin:auto;
+}
+.cover-box-h3{
+    width: 420px;
+    color: #19202C;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 130.769% */
+    margin-top: 30px;
+}
+.cover-box-p{
+    width: 285px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    
+}
+.div1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.Margaret-Phelps-videos{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: scroll;
+}
+.Margaret-Phelps-videos::-webkit-scrollbar{
+    display: none;
+}
+.margarit{
+    color: #19202C;
+    font-family: Mulish;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.margaret-h6{
+    color: #19202C;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    text-align: center;
+}
+.margarit-p{
+    color: #C2C2C2;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.div-box1{
+    text-decoration: none;
+}
+.img{
+   width: 300px !important;
+   border-radius: 10px;
+}
+.cover-h6{
+    font-size: 16px;
+}
+.resLayout{
+    display: none;
+    /* width: 100%; */
+    padding: 5px 0px;
+    /* justify-content: space-between; */
+    border-top: 1px solid grey;
+    box-shadow: 0 0 10px grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
+  .resLink{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    }
+
+@media (max-width: 700px){
+    .channel-box{
+        width: 84%;
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        margin: auto;
+        padding: auto;
+
+    }
+    .channelImg{
+        width:400px;
+        height: 150px;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscribe-btn{
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        margin-left: 60px;
+
+    }
+    .ovalImg{
+       width: 68px;
+   
+       position: absolute;
+       top: 100px;
+       left: 75px;
+       border-radius: 50%;
+       
+    }
+    .box{
+        display: block;
+        align-items: center;
+        gap: 10px;
+    }
+    .box1{
+        padding: auto;
+    }
+    .box2{
+        padding:auto ;
+        margin-top: 15px;
+        margin-left: auto;
+    }
+    .zvanokImg{
+       display: none;
+    }
+    .channelUl{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 20px;
+      
+    }
+    .channelLink{
+        font-size: 16px;
+    }
+    .channelLink1{
+        font-size: 18px;
+        display: none;
+    }
+    .p{
+      display: none;
+    }
+    .cover-box{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .cover-box-a{
+      display: none;
+    }
+    .cover-box-b{
+        display: none;
+    }
+    .Margaret-Phelps-videos{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        overflow: none;
+        width: 300px;
+        margin-left: 70px;
+
+    }
+    .margarit{
+       display: none;
+    }
+    .cover-h6{
+        font-size: 16px;
+    }
+    .box-h2{
+       font-size: 20px; 
+       margin-top: 25px;
+       margin-left: 60px;
+    }
+    .box-p{
+        color: gray;
+        margin-left: 60px;
+    }
+    .serarch14{
+        display: none;
+    }
+    .carouselBtn{
+        cursor: not-allowed;
+       display: none;
+    }
+    .resLayout{
+        display: flex;
+        height: 55px;
+      }
+      .resLink:focus{
+        color: red;
+      }
+}
+@media (max-width: 320px){
+    .channel-box{
+        width: 84%;
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        margin: auto;
+        padding: auto;
+
+    }
+    .channelImg{
+        width: 300px;
+        height: 100px;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    .subscribe-btn{
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+    .ovalImg{
+       width: 55px;
+       position: absolute;
+       top: 60px;
+       left: 75px;
+       border-radius: 50%;
+    }
+    .box{
+        display: block;
+        align-items: center;
+        gap: 10px;
+    }
+    .box1{
+        padding: auto;
+    }
+    .box2{
+        padding:auto ;
+        margin-top: 15px;
+        margin-left: auto;
+    }
+    .zvanokImg{
+       display: none;
+    }
+    .channelUl{
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+    .channelLink{
+        font-size: 16px;
+    }
+    .channelLink1{
+        font-size: 18px;
+        display: none;
+    }
+    .p{
+      display: none;
+    }
+    .cover-box{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .cover-box-a{
+      display: none;
+    }
+    .cover-box-b{
+        display: none;
+    }
+    .Margaret-Phelps-videos{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        overflow: none;
+        width: 300px;
+    }
+    .margarit{
+       display: none;
+    }
+    .cover-h6{
+        font-size: 16px;
+    }
+    .box-h2{
+       font-size: 20px; 
+       margin-top: 25px;
+    }
+    .box-p{
+        color: gray;
+    }
+    .serarch14{
+        display: none;
+    }
+    .carouselBtn{
+        cursor: not-allowed;
+       display: none;
+    }
+    .resLayout{
+        display: flex;
+        height: 55px;
+      }
+      .resLink:focus{
+        color: red;
+      }
+
+}
