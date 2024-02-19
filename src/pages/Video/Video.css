@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-  @media (max-width: 500px) {
+@media (max-width: 600px) {
     .Video{
         width: 100%;
         padding: 10px 20px 10px 10px;
@@ -102,9 +102,12 @@
         color: black;
     }
     .ifroem-video{
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 220px;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .video-p{
         display: none;
@@ -117,6 +120,7 @@
     }
     .textH2{
         font-size: 20px;
+        color: #000;
     }
     .titl-h2{
         width: 100% !important;

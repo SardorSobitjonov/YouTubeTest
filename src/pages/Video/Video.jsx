@@ -16,7 +16,7 @@ const Video = () => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+		'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
@@ -38,7 +38,7 @@ try {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '68c1274539msh590b47591a2fe0ep1fdb6cjsn882e41e6b0fa',
+          'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
       };
