@@ -97,7 +97,8 @@ ol, ul{
 }
 @media (max-width: 800px) {
   .Header{
-    width: 700px;
+    width: 800px;
+    padding: 0 10px;
   }
   .layoutFlex{
     display: none;
@@ -115,12 +116,12 @@ ol, ul{
     display: none !important;
   }
   .searchInp{
-    width: 180px;
+    width: 300px;
   }
   .searchBtn, .searchBox{
     border: none;
     font-size: 16px;
-    margin-left: 94px;
+    margin-left: 90px;
     display: flex;
     gap: 4px;
   }

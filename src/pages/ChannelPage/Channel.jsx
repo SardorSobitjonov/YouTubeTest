@@ -38,7 +38,7 @@ const Channel = () => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+		'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
@@ -143,7 +143,7 @@ try {
           <div>
           <Link to={"/video"} className="div-box1">
             <img className='img' src={video?.video?.thumbnails[0]?.url}  alt="foto" />
-            <h6 className='margaret-h6'>{video?.video?.title}</h6>
+            <h6 className='margaret-h6'>{video?.video?.title.slice(0, 40)}</h6>
             <p className='margarit-p' >{video?.video?.stats?.views}k views  ·  {video?.video?.publishedTimeText} Food & Drink</p>
           </Link>
           </div>
@@ -155,15 +155,19 @@ try {
      <div className='resLayout'>
           <Link to={"/"} className="resLink">
             <i className='bi bi-house'></i>
+            <h6>Home</h6>
           </Link>
           <Link to={"/video"} className="resLink">
             <i className='bi bi-fire'></i>
+            <h6>Tranding</h6>
           </Link>
           <Link to={"/"} className="resLink">
             <i className='bi bi-folder2-open'></i>
+            <h6>Subscription</h6>
           </Link>
           <Link to={"/"} className="resLink">
             <i className='bi bi-person'></i>
+            <h6>Profile</h6>
           </Link>
       </div>
     </div>

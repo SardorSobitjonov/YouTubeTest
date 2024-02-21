@@ -49,7 +49,7 @@ const Home = ({handleLayout}) => {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+          'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
       };
@@ -72,7 +72,7 @@ const Home = ({handleLayout}) => {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+          'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
       };
@@ -81,7 +81,7 @@ const Home = ({handleLayout}) => {
         const response = await fetch(url, options);
         const result = await response.json();
         setVideoRec(result);
-
+console.log(result)
       } catch (error) {
         console.error(error);
       }
@@ -95,7 +95,7 @@ const Home = ({handleLayout}) => {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+          'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
       };
@@ -129,13 +129,15 @@ const Home = ({handleLayout}) => {
       </div>
       <div>
       <ul style={{'--homeCarousel' : `${homeCarousel + 'px'}`}} className='homeResHide VideoList1 VideoList'>
-          {video?.contents?.map((item) => {
+           {video?.contents?.map((item) => {
             return<>
             <li>
                <Link to={"/video"} style={{textDecoration: 'none'}} onClick={() => handleLayout(false)}>
               <div className='HomeVideo'>
+                <div>
                 <img className="VideoImg" src={item?.video?.thumbnails[0]?.url} alt="Error" />
                 <h6 className='px-2 py-1'>{item?.video?.title.slice(0, 40)}</h6>
+                </div>
                 <div className="d-flex align-items-center justify-content-between text-secondary px-2">
                 <div className='d-flex gap-4 justify-content-between'>
                   <p><i className='bi bi-eye'> </i>{(item?.video?.stats?.views) ? (item?.video?.stats?.views) : "0"}</p>
@@ -167,9 +169,9 @@ const Home = ({handleLayout}) => {
                <Link to={"/video"} style={{textDecoration: 'none', color: 'black'}} onClick={() => handleLayout(false)}>
               <div className='HomeRecVideo'>
                 <img className="VideoImg" src={item?.video?.thumbnails[0]?.url} alt="Error" />
+                <div className="d-flex align-items-center justify-content-between text-secondary px-2 HomevidBottom">
                 <h6 className='px-2 py-1'>{item?.video?.title.slice(0, 35)}</h6>
-                <div className="d-flex align-items-center justify-content-between text-secondary px-2">
-                <div className='d-flex gap-4 justify-content-between'>
+                <div className='d-flex gap-4 justify-content-between homebottom'>
                   <p><i className='bi bi-eye'> </i>{(item?.video?.stats?.views) ? (item?.video?.stats?.views) : "0"}</p>
                   <p>{item?.video?.publishedTimeText}</p>
                   </div>
@@ -220,15 +222,19 @@ const Home = ({handleLayout}) => {
       <div className='resLayout'>
           <Link to={"/"} className="resLink">
             <i className='bi bi-house'></i>
+            <h6>Home</h6>
           </Link>
           <Link to={"/video"} className="resLink">
             <i className='bi bi-fire'></i>
+            <h6>Tranding</h6>
           </Link>
           <Link to={"/"} className="resLink">
             <i className='bi bi-folder2-open'></i>
+            <h6>Subscription</h6>
           </Link>
           <Link to={"/"} className="resLink">
             <i className='bi bi-person'></i>
+            <h6>Profile</h6>
           </Link>
       </div>
     </div>

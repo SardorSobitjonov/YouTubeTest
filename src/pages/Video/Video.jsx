@@ -16,7 +16,7 @@ const Video = () => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+		'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
@@ -38,7 +38,7 @@ try {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '29621498e2mshc8747ccd587dd06p1751e6jsn02bb86c8dc16',
+          'X-RapidAPI-Key': '14990bc8b4msh14f16578ca943cbp1b6010jsn132677e67dfa',
           'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
         }
       };
@@ -59,7 +59,7 @@ try {
     <div className="Video">
             <div className="vidMain">
                 <div className="vid">
-                <iframe width="900" height="450" className="ifroem-video" src="https://www.youtube.com/embed/kJQP7kiw5Fk?si=W25emVWijSj9a6qy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="900" height="450" className="ifroem-video" src="https://www.youtube.com/embed/kJQP7kiw5Fk?si=W25emVWijSj9a6qy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" autoPlay></iframe>
                     <h4 className='titl-h2'>{vid?.title}</h4>
                     <p>{vid?.description}</p>
                     <div className='d-flex align-items-center justify-content-between text-View'>
@@ -98,13 +98,13 @@ try {
                         vidNext?.contents?.map((item) => {
                           console.log(vidNext?.contents);
                           return<>
-                            <div>
+                            <div className="mb-5 resviddiv">
                             <Link to={"/video"} style={{textDecoration: 'none'}}>
-                              <div className='HomeVideo'>
+                              <div className='HomeVideo videovid'>
                                 <img className="VideoImg" src={item?.video?.thumbnails[0].url} alt="Error" />
                                 <h6 className='px-2 h6'>{item?.video?.title}</h6>
                                 <div className="d-flex align-items-center justify-content-between text-secondary px-2">
-                                <div className='d-flex gap-4 justify-content-between'>
+                                <div className='d-flex gap-4 justify-content-between vidtext'>
                                   <p><i className='bi bi-eye'></i>{item?.video?.stats?.views}</p>
                                   <p>{item?.video?.author?.publishedTimeText}</p>
                                   </div>
